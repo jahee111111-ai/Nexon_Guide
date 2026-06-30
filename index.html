@@ -31,6 +31,39 @@ li { margin:8px 0; }
 .caption { padding:11px 14px; color:var(--muted); font-size:14px; background:#fafbfe; }
 .footer { color:var(--muted); text-align:center; font-size:13px; margin-top:22px; }
 @media (max-width:760px) { .grid,.money { grid-template-columns:1fr; } .hero h1 { font-size:28px; } .card { padding:18px; } }
+
+.contract-box{
+    margin:18px 0 8px;
+    display:flex;
+    justify-content:center;
+}
+.contract-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    max-width:520px;
+    padding:18px 24px;
+    background:linear-gradient(135deg,#7b61ff,#5b4df6);
+    color:#fff;
+    font-size:22px;
+    font-weight:700;
+    border-radius:18px;
+    text-decoration:none;
+    box-shadow:0 10px 25px rgba(109,93,252,.35);
+    transition:.25s;
+}
+.contract-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 15px 35px rgba(109,93,252,.45);
+}
+.contract-btn small{
+    display:block;
+    font-size:14px;
+    font-weight:400;
+    opacity:.9;
+}
+
 </style>
 </head>
 <body>
@@ -48,8 +81,15 @@ li { margin:8px 0; }
       <div>이후 매월(후불)<strong>5,000원</strong></div>
     </div>
   </section>
-
-  <section class="grid">
+   <div class="contract-box">
+    <a href="contract.pdf" class="contract-btn">
+        <div style="text-align:center;">
+             전자 계약서 작성하기
+            <small>계약 내용을 확인하고 작성합니다.</small>
+        </div>
+    </a>
+</div>
+<section class="grid">
     <div class="card">
       <h2>기존 넥슨 아이디가 있는 경우</h2>
       <ol>
@@ -109,7 +149,6 @@ li { margin:8px 0; }
     </div>
   </section>
 
-  <p class="footer">Google Sites 또는 Google Drive에 올린 뒤 URL을 QR코드로 만들면 됩니다.</p>
 </main>
 </body>
 </html>
